@@ -1,0 +1,414 @@
+/*MARGIN Y PADDING EN 0*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*MAQUETACIÓN EL FLEXBOX*/
+/*Menú*/
+.Contenedor_Menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: RGB(22, 13, 159);
+    margin: 0px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*LOGO DEL MENÚ*/
+.Contenedor_Menu_Logo img{
+    height: 65px;
+    width: 127px;
+}
+
+/*Color para la cinta opciones*/
+nav{
+    display: flex;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    cursor: pointer;
+}
+
+/*Hover para la cinta opciones*/
+nav a:hover{
+    color: yellow;
+}
+
+/*Estilo al boton*/
+.btn_Menu :hover{
+    color: yellow;
+}
+.btn_Menu{
+    margin-right: 30px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+/*Header*/
+/*
+.Contenedor_Header{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}*/
+
+/*
+.Contenedor_Header_Img{
+    height: 85vh;
+    width: 97%;
+    box-shadow: -1px 5px 8px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 5px 8px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 8px 1px rgba(0,0,0,0.75);
+}*/
+
+/*Diseño del Selection*/
+section{
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+/*Titulo*/
+.Section_Encabezado{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-weight: bold;
+    font-size: 35px;
+    color: RGB(22, 15, 159);
+}
+/*SECCION GENERAL*/
+.Section_Nosotros{
+    display: flex;
+    font-size: 14px;
+}
+/*SECCION ESP*/
+.Section_Nosotros_Es{
+    margin-left: 145px;
+    margin-right: 30px;
+}
+.Section_Nosotros_Es_Quienes{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: RGB(22, 15, 159);
+}
+
+/*SECCION ING*/
+.Section_Nosotros_En{
+    margin-right: 145px;
+    margin-left: 10px;
+}
+.Section_Nosotros_Es_We{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: RGB(22, 15, 159);
+}
+
+/*Diseño del article*/
+article{
+    font-family: 'Open Sans', sans-serif;
+}
+.Contenedor_Article_Encabezado{
+    text-align: center;
+    margin: 30px;
+    margin-top: 50px;
+    color: RGB(22, 15, 159);
+    font-size: 35px;
+}
+.Contenedor_Article_Parrafo{
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    align-items: center;
+}
+/*Detalle de la imagen gradiente*/
+.Contenedor_Article_Parrafo_Img{
+    height: 27em;
+    width: 250em;
+
+    margin-left: 145px;
+    margin-right: 30px;
+    
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url(/IMAGEN/cajerostuti-tuti-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+.Contenedor_Article_Parrafo_Pa{
+    margin-right: 145px;
+    margin-left: 10px;
+    text-align: justify;
+}
+.enviar{
+    background-color: RGB(22, 15, 159);
+    color: RGB(245, 236, 3);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    min-width: 100%;
+}
+.subrayar{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+p{
+    line-height: 1.2;
+}
+
+/*Pie de pagina*/
+.Contenedor_Footer{
+    display: flex;
+    background-color: RGB(22, 13, 159);
+    align-items: start;
+    color: yellow;
+    margin: 0;
+    padding: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+.Contenedor_Footer_Logo img{
+    height: 120px;
+    width: 200px;
+    padding: 10px;
+}
+.Titulo_Contacto{
+    font-size: 13px;
+    border-bottom: 0.1px solid yellow;
+    padding-bottom: 10px;
+}
+.Contenedor_Footer_Contacto{
+    width: 350px;
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 7.4%;
+}
+.Titulo_Nosotros{
+    font-size: 13px;
+    border-bottom: 0.1px solid yellow;
+    padding-bottom: 10px;
+}
+.Contenedor_Footer_Nosotros{
+    width: 350px;
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 3%;
+    
+}
+ul li:before {
+    content: "►";
+    font-size: 12px;
+    margin-right: 5px;
+}
+li{
+    color: white;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 1275px){
+    nav a{
+        display: inline;
+        display: block;
+    }
+
+    /*Menu*/
+    .btn_Menu{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        display: inline;
+    }
+
+    /*Funcion del menu movil*/
+    .opciones_Menu{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(57, 50, 47);
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 90px;
+        left: -100%;
+        text-align: center;
+        transition: all .4s;
+        z-index: 99;
+    }
+}
+
+
+/*Media Queries*/
+@media screen and (max-width: 768px){
+    nav a{
+        display: inline;
+        display: block;
+    }
+
+    /*Menu*/
+    .btn_Menu{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        display: inline;
+    }
+
+    /*Funcion del menu movil*/
+    .opciones_Menu{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(57, 50, 47);
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 90px;
+        left: -100%;
+        text-align: center;
+        transition: all .4s;
+        z-index: 99;
+    }
+
+    /*Banner*/
+    /*
+    .Contenedor_Header_Img{
+        height: 40vh;
+        width: 100%;
+        box-shadow: -1px 5px 8px 1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -1px 5px 8px 1px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 5px 8px 1px rgba(0,0,0,0.75);
+        border-radius: 5px;
+    }*/
+
+    /*Titulo sección nosotros contendor general*/
+    .Section_Nosotros{
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+    }
+    .Section_Encabezado{
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        font-weight: bold;
+        font-size: 15px;
+        color: RGB(22, 15, 159);
+    }
+    .Section_Nosotros_Es{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .Section_Nosotros_En{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .Section_Nosotros_Es_Quienes{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .Section_Nosotros_Es_We{
+        font-weight: bold;
+        font-size: 10px;
+    }
+    section h1{
+        font-size: 10px;
+    }
+    .Contenedor_Article_Encabezado{
+        margin-top: 25px;
+        font-size: 15px;
+    }
+    /*Article general*/
+    .Contenedor_Article_Parrafo{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 9px;
+    }
+    .Contenedor_Article_Parrafo_Img{
+        height: 200px;
+        width: 280px;
+
+        background-size: contain;
+        margin-left: 20px;
+        margin-right: 15px;
+    }
+    .Contenedor_Article_Parrafo_Pa{
+        margin-right: 20px;
+        margin-left: 15px;
+    }
+    .enviar{
+        font-size: 9px;
+    }
+    /*Footer*/
+    
+    .Contenedor_Footer{
+        justify-content: space-around;
+        width: 100vw;
+        padding: 2px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        font-size: 9px;
+        /*
+        width: 100vw;
+        height: 100vh;
+        */
+    }
+    footer{
+        width: 100vw;
+        padding: 0px;
+        margin: 0px;
+    }
+    .Contenedor_Footer_Logo img{
+        height: 55px;
+        width: 95px;
+    }
+    .Titulo_Contacto{
+        font-size: 10px;
+    }
+    .Contenedor_Footer_Contacto{
+        width: 100px;
+        margin: 2px;
+        padding: 1px;
+        margin: 0px;
+    }
+    .Titulo_Nosotros{
+        font-size: 10px;
+    }
+    .Contenedor_Footer_Nosotros{
+        width: 150px;
+        margin: 2px;
+        padding: 1px;
+        margin: 0px;
+    }
+}
+
+.swiper { 
+    width: 100%;
+    height: 580px;
+}
+
+.imagenPrimera{
+    height: 555px;
+    width: 100%;
+    object-fit:cover;
+}
+.show{
+    left: 0;
+}
